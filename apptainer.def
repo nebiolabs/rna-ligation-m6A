@@ -1,0 +1,13 @@
+Bootstrap: docker
+From: condaforge/miniforge3:24.3.0-0
+
+%post
+# update container
+apt-get update
+
+# update conda
+conda update -n base conda
+
+conda install -c conda-forge -c bioconda python pip samtools minimap2
+
+pip install pysam tqdm

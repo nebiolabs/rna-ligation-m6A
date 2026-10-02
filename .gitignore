@@ -1,0 +1,6 @@
+apptainer.sif
+data
+*.bam
+*.bai
+*.sam
+*.fastq
